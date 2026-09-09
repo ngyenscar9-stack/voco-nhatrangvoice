@@ -25,13 +25,11 @@
       padding: 0;
     }
 
-
     html,
     body {
       width: 100%;
       height: 100%;
     }
-
 
     body {
 
@@ -140,7 +138,7 @@
 
       position: absolute;
 
-      top: 32px;
+      top: 30px;
       left: 50%;
 
       transform:
@@ -160,7 +158,7 @@
         "Times New Roman",
         serif;
 
-      font-size: 50px;
+      font-size: 48px;
 
       font-weight: 600;
 
@@ -173,7 +171,7 @@
 
     .by-ihg {
 
-      margin-top: 9px;
+      margin-top: 8px;
 
       display: flex;
 
@@ -208,7 +206,7 @@
 
 
     /* =========================================================
-       MAIN CARD
+       MAIN PANEL
     ========================================================= */
 
     .panel {
@@ -219,11 +217,11 @@
           94vw
         );
 
-      min-height: 545px;
+      min-height: 550px;
 
       padding:
-        50px
-        52px;
+        48px
+        50px;
 
       background:
         #fffdf8;
@@ -306,7 +304,7 @@
 
       margin:
         0 auto
-        34px;
+        30px;
 
       font-size: 14px;
 
@@ -332,7 +330,7 @@
 
       gap: 8px;
 
-      margin-bottom: 30px;
+      margin-bottom: 28px;
 
     }
 
@@ -363,7 +361,7 @@
 
 
     /* =========================================================
-       OPTION GRID
+       OPTIONS
     ========================================================= */
 
     .options {
@@ -392,14 +390,9 @@
     }
 
 
-
-    /* =========================================================
-       OPTION BUTTON
-    ========================================================= */
-
     .option-button {
 
-      min-height: 86px;
+      min-height: 84px;
 
       border:
         1.5px solid
@@ -412,8 +405,8 @@
       cursor: pointer;
 
       padding:
-        16px
-        14px;
+        15px
+        13px;
 
       display: flex;
 
@@ -468,25 +461,12 @@
       transform:
         translateY(-2px);
 
-      box-shadow:
-        0
-        10px
-        25px
-        rgba(
-          23,
-          35,
-          62,
-          0.18
-        );
-
     }
 
 
     .option-icon {
 
-      font-size: 26px;
-
-      line-height: 1;
+      font-size: 25px;
 
     }
 
@@ -509,16 +489,15 @@
 
       width: 100%;
 
-      margin-top: 26px;
+      margin-top: 24px;
 
-      padding: 17px 20px;
+      padding: 17px;
 
       border: none;
 
       border-radius: 14px;
 
-      background:
-        #17233e;
+      background: #17233e;
 
       color: white;
 
@@ -534,8 +513,7 @@
 
       pointer-events: none;
 
-      transition:
-        0.2s ease;
+      transition: 0.2s ease;
 
     }
 
@@ -549,28 +527,9 @@
     }
 
 
-    .next-button.enabled:hover {
-
-      transform:
-        translateY(-2px);
-
-      box-shadow:
-        0
-        10px
-        25px
-        rgba(
-          23,
-          35,
-          62,
-          0.22
-        );
-
-    }
-
-
 
     /* =========================================================
-       LOADING SCREEN
+       AI LOADING
     ========================================================= */
 
     .ai-loader {
@@ -590,7 +549,7 @@
 
       margin:
         20px auto
-        29px;
+        28px;
 
       border-radius: 50%;
 
@@ -609,11 +568,9 @@
         "Times New Roman",
         serif;
 
-      font-size: 29px;
+      font-size: 28px;
 
       font-weight: 600;
-
-      color: #17233e;
 
     }
 
@@ -669,7 +626,7 @@
 
     .loading-bar {
 
-      width: 200px;
+      width: 210px;
       height: 4px;
 
       margin:
@@ -696,7 +653,7 @@
 
       animation:
         load
-        2.7s
+        2.6s
         ease
         forwards;
 
@@ -712,7 +669,7 @@
 
       animation:
         fadeUp
-        0.65s
+        0.6s
         ease;
 
     }
@@ -722,13 +679,13 @@
 
       width: 100%;
 
-      min-height: 345px;
+      min-height: 340px;
 
       border-radius: 24px;
 
       padding:
-        38px
-        42px;
+        37px
+        40px;
 
       position: relative;
 
@@ -744,9 +701,9 @@
             246,
             187,
             33,
-            0.5
+            0.55
           ),
-          transparent 35%
+          transparent 36%
         ),
 
         linear-gradient(
@@ -772,32 +729,6 @@
     }
 
 
-    .postcard::before {
-
-      content: "";
-
-      width: 310px;
-      height: 310px;
-
-      position: absolute;
-
-      bottom: -205px;
-      right: -60px;
-
-      border-radius: 50%;
-
-      border:
-        1px solid
-        rgba(
-          255,
-          255,
-          255,
-          0.25
-        );
-
-    }
-
-
     .postcard-small {
 
       font-size: 10px;
@@ -816,7 +747,7 @@
           0.7
         );
 
-      margin-bottom: 16px;
+      margin-bottom: 15px;
 
     }
 
@@ -828,11 +759,11 @@
         "Times New Roman",
         serif;
 
-      font-size: 41px;
+      font-size: 40px;
 
       font-weight: 500;
 
-      margin-bottom: 27px;
+      margin-bottom: 24px;
 
     }
 
@@ -844,40 +775,12 @@
         "Times New Roman",
         serif;
 
-      font-size: 21px;
+      font-size: 20px;
 
-      line-height: 1.55;
-
-      max-width: 480px;
+      line-height: 1.52;
 
     }
 
-
-    .postcard-voco {
-
-      margin-top: 32px;
-
-      font-size: 11px;
-
-      letter-spacing: 2px;
-
-      text-transform: uppercase;
-
-      color:
-        rgba(
-          255,
-          255,
-          255,
-          0.68
-        );
-
-    }
-
-
-
-    /* =========================================================
-       TAGS
-    ========================================================= */
 
     .postcard-tags {
 
@@ -885,9 +788,9 @@
 
       flex-wrap: wrap;
 
-      gap: 8px;
+      gap: 7px;
 
-      margin-top: 22px;
+      margin-top: 20px;
 
     }
 
@@ -895,8 +798,8 @@
     .tag {
 
       padding:
-        7px
-        11px;
+        6px
+        10px;
 
       border-radius: 20px;
 
@@ -919,23 +822,36 @@
 
       font-size: 10px;
 
-      letter-spacing: 0.6px;
+    }
+
+
+    .postcard-voco {
+
+      margin-top: 25px;
+
+      font-size: 10px;
+
+      letter-spacing: 2px;
+
+      text-transform: uppercase;
+
+      opacity: 0.7;
 
     }
 
 
 
     /* =========================================================
-       SHARE BUTTONS
+       POSTCARD ACTION
     ========================================================= */
 
     .postcard-actions {
 
-      margin-top: 22px;
+      margin-top: 20px;
 
       display: flex;
 
-      gap: 12px;
+      gap: 11px;
 
     }
 
@@ -944,7 +860,7 @@
 
       flex: 1;
 
-      padding: 15px;
+      padding: 16px;
 
       border: none;
 
@@ -967,9 +883,7 @@
 
     .restart-button {
 
-      padding:
-        15px
-        20px;
+      width: 52px;
 
       border-radius: 13px;
 
@@ -983,16 +897,14 @@
 
       cursor: pointer;
 
-      font-size: 12px;
-
-      font-weight: 700;
+      font-size: 18px;
 
     }
 
 
 
     /* =========================================================
-       SHARE SCREEN
+       SHARE PLATFORM SCREEN
     ========================================================= */
 
     .share-screen {
@@ -1007,12 +919,12 @@
 
     .share-icon {
 
-      width: 96px;
-      height: 96px;
+      width: 88px;
+      height: 88px;
 
       margin:
-        15px auto
-        25px;
+        10px auto
+        24px;
 
       border-radius: 50%;
 
@@ -1020,46 +932,413 @@
 
       display: flex;
 
-      justify-content: center;
       align-items: center;
+      justify-content: center;
 
-      font-size: 35px;
+      font-size: 34px;
 
     }
 
 
-    .social-row {
+    .platforms {
 
       display: flex;
 
-      justify-content: center;
+      gap: 14px;
 
-      gap: 12px;
-
-      margin-top: 30px;
+      margin-top: 10px;
 
     }
 
 
-    .social {
+    .platform-button {
 
-      padding:
-        14px
-        18px;
+      flex: 1;
 
-      border-radius: 12px;
+      min-height: 100px;
 
       border:
         1.5px solid
-        #e1dcd2;
+        #ded9cf;
+
+      border-radius: 18px;
 
       background: white;
 
-      font-size: 12px;
+      cursor: pointer;
+
+      font-size: 15px;
 
       font-weight: 700;
 
       color: #17233e;
+
+      transition:
+        0.2s ease;
+
+    }
+
+
+    .platform-button span {
+
+      display: block;
+
+      font-size: 29px;
+
+      margin-bottom: 10px;
+
+    }
+
+
+    .platform-button:hover {
+
+      transform:
+        translateY(-4px);
+
+      background: #17233e;
+
+      color: white;
+
+      border-color:
+        #17233e;
+
+      box-shadow:
+        0
+        12px
+        28px
+        rgba(
+          23,
+          35,
+          62,
+          0.15
+        );
+
+    }
+
+
+
+    /* =========================================================
+       DISCOVERY ANIMATION
+    ========================================================= */
+
+    .discovery-screen {
+
+      width: 100%;
+
+      animation:
+        fadeUp
+        0.5s
+        ease;
+
+    }
+
+
+    .sharing-platform {
+
+      display: inline-block;
+
+      padding:
+        7px
+        12px;
+
+      margin-bottom: 24px;
+
+      border-radius: 30px;
+
+      background:
+        #f6bb21;
+
+      font-size: 11px;
+
+      font-weight: 700;
+
+      letter-spacing: 1.3px;
+
+      text-transform: uppercase;
+
+    }
+
+
+    .discovery-title {
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 34px;
+
+      font-weight: 500;
+
+      margin-bottom: 33px;
+
+    }
+
+
+    .journey-network {
+
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 8px;
+
+      width: 100%;
+
+    }
+
+
+    .network-step {
+
+      flex: 1;
+
+      opacity: 0;
+
+      transform:
+        scale(0.6)
+        translateY(20px);
+
+    }
+
+
+    .network-step.show {
+
+      animation:
+        popBounce
+        0.7s
+        ease
+        forwards;
+
+    }
+
+
+    .network-circle {
+
+      width: 92px;
+      height: 92px;
+
+      margin:
+        0 auto
+        12px;
+
+      border-radius: 50%;
+
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+
+      flex-direction: column;
+
+      background:
+        #fff7dd;
+
+      border:
+        2px solid
+        #f6bb21;
+
+      box-shadow:
+        0
+        10px
+        25px
+        rgba(
+          0,
+          0,
+          0,
+          0.08
+        );
+
+    }
+
+
+    .network-step.show .network-circle {
+
+      animation:
+        dance
+        0.72s
+        ease-in-out
+        infinite;
+
+    }
+
+
+    .network-number {
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 28px;
+
+      font-weight: 600;
+
+      line-height: 1;
+
+    }
+
+
+    .network-icon {
+
+      font-size: 18px;
+
+      margin-top: 4px;
+
+    }
+
+
+    .network-label {
+
+      font-size: 11px;
+
+      font-weight: 700;
+
+      color: #777;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1px;
+
+    }
+
+
+    .network-arrow {
+
+      font-size: 23px;
+
+      color: #c8a12d;
+
+      opacity: 0;
+
+    }
+
+
+    .network-arrow.show {
+
+      animation:
+        arrowAppear
+        0.4s
+        ease
+        forwards;
+
+    }
+
+
+
+    /* =========================================================
+       FINAL DISCOVERY
+    ========================================================= */
+
+    .more-discovery {
+
+      opacity: 0;
+
+      margin-top: 40px;
+
+    }
+
+
+    .more-discovery.show {
+
+      animation:
+        finalReveal
+        0.8s
+        ease
+        forwards;
+
+    }
+
+
+    .more-discovery-small {
+
+      font-size: 10px;
+
+      font-weight: 700;
+
+      letter-spacing: 4px;
+
+      color: #9b8250;
+
+      text-transform: uppercase;
+
+    }
+
+
+    .more-discovery-big {
+
+      margin-top: 7px;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 37px;
+
+      font-weight: 500;
+
+      color: #17233e;
+
+    }
+
+
+    .discovery-line {
+
+      width: 60px;
+      height: 3px;
+
+      margin:
+        18px auto
+        0;
+
+      background: #f6bb21;
+
+      border-radius: 10px;
+
+    }
+
+
+
+    /* =========================================================
+       REPLAY
+    ========================================================= */
+
+    .replay-button {
+
+      opacity: 0;
+
+      margin-top: 20px;
+
+      padding:
+        10px
+        16px;
+
+      border:
+        1px solid
+        #ddd;
+
+      background: white;
+
+      border-radius: 20px;
+
+      cursor: pointer;
+
+      font-size: 11px;
+
+      color: #777;
+
+    }
+
+
+    .replay-button.show {
+
+      opacity: 1;
+
+      transition:
+        opacity
+        0.5s
+        ease;
 
     }
 
@@ -1073,7 +1352,7 @@
 
       position: absolute;
 
-      bottom: 27px;
+      bottom: 26px;
 
       left: 50%;
 
@@ -1105,7 +1384,7 @@
 
 
     /* =========================================================
-       ANIMATIONS
+       ANIMATION KEYFRAMES
     ========================================================= */
 
     @keyframes fadeUp {
@@ -1118,7 +1397,6 @@
           translateY(12px);
 
       }
-
 
       to {
 
@@ -1144,11 +1422,10 @@
 
       }
 
-
       50% {
 
         transform:
-          scale(1.06);
+          scale(1.05);
 
         opacity: 1;
 
@@ -1160,15 +1437,122 @@
     @keyframes load {
 
       from {
-
         width: 0%;
+      }
+
+      to {
+        width: 100%;
+      }
+
+    }
+
+
+    @keyframes popBounce {
+
+      0% {
+
+        opacity: 0;
+
+        transform:
+          scale(0.5)
+          translateY(20px);
 
       }
 
+      60% {
+
+        opacity: 1;
+
+        transform:
+          scale(1.12)
+          translateY(-6px);
+
+      }
+
+      100% {
+
+        opacity: 1;
+
+        transform:
+          scale(1)
+          translateY(0);
+
+      }
+
+    }
+
+
+    @keyframes dance {
+
+      0%,
+      100% {
+
+        transform:
+          translateY(0)
+          rotate(-1deg);
+
+      }
+
+      50% {
+
+        transform:
+          translateY(-8px)
+          rotate(1deg);
+
+      }
+
+    }
+
+
+    @keyframes arrowAppear {
+
+      from {
+
+        opacity: 0;
+
+        transform:
+          translateX(-10px);
+
+      }
 
       to {
 
-        width: 100%;
+        opacity: 1;
+
+        transform:
+          translateX(0);
+
+      }
+
+    }
+
+
+    @keyframes finalReveal {
+
+      0% {
+
+        opacity: 0;
+
+        transform:
+          scale(0.8);
+
+      }
+
+      70% {
+
+        opacity: 1;
+
+        transform:
+          scale(1.08);
+
+      }
+
+      100% {
+
+        opacity: 1;
+
+        transform:
+          scale(1);
 
       }
 
@@ -1185,39 +1569,11 @@
       max-width: 650px
     ) {
 
-      .screen {
-
-        padding: 20px;
-
-      }
-
-
-      .brand {
-
-        top: 22px;
-
-      }
-
-
-      .voco {
-
-        font-size: 38px;
-
-      }
-
-
       .panel {
 
         padding:
-          38px
-          23px;
-
-      }
-
-
-      .title {
-
-        font-size: 29px;
+          35px
+          22px;
 
       }
 
@@ -1233,25 +1589,38 @@
       }
 
 
-      .postcard {
+      .journey-network {
 
-        padding:
-          30px
-          25px;
+        gap: 3px;
 
       }
 
 
-      .postcard-title {
+      .network-circle {
 
-        font-size: 32px;
+        width: 68px;
+        height: 68px;
 
       }
 
 
-      .postcard-line {
+      .network-number {
 
-        font-size: 18px;
+        font-size: 21px;
+
+      }
+
+
+      .network-arrow {
+
+        font-size: 15px;
+
+      }
+
+
+      .network-label {
+
+        font-size: 8px;
 
       }
 
@@ -1275,9 +1644,7 @@
 
 
 
-    <!-- =====================================================
-         BRAND
-    ====================================================== -->
+    <!-- BRAND -->
 
     <div class="brand">
 
@@ -1293,22 +1660,27 @@
 
 
 
-    <!-- =====================================================
-         MAIN CONTENT
-    ====================================================== -->
+    <!-- MAIN CONTENT -->
 
     <main
       class="panel"
       id="panel"
     >
-
     </main>
 
 
 
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
+    <!-- OPTIONAL MUSIC -->
+
+    <audio
+      id="musicPlayer"
+      src="music.mp3"
+      preload="auto"
+    ></audio>
+
+
+
+    <!-- FOOTER -->
 
     <div class="footer">
       Your Nha Trang · voco Scenia Bay
@@ -1323,7 +1695,7 @@
 
 
     /* =========================================================
-       USER ANSWERS
+       ANSWERS
     ========================================================= */
 
     const answers = {
@@ -1339,21 +1711,24 @@
     };
 
 
-
     const panel =
       document.getElementById(
         "panel"
       );
 
 
+    const musicPlayer =
+      document.getElementById(
+        "musicPlayer"
+      );
+
+
 
     /* =========================================================
-       PROGRESS BAR
+       PROGRESS
     ========================================================= */
 
-    function progress(
-      current
-    ) {
+    function progress(current) {
 
       let html =
         '<div class="progress">';
@@ -1390,206 +1765,87 @@
 
 
     /* =========================================================
-       SCREEN 1
-       CHOOSE MOOD
+       OPTION TEMPLATE
+    ========================================================= */
+
+    function option(
+      name,
+      icon
+    ) {
+
+      return `
+
+        <button
+          class="option-button"
+          data-value="${name}"
+        >
+
+          <div class="option-icon">
+            ${icon}
+          </div>
+
+          <div class="option-label">
+            ${name}
+          </div>
+
+        </button>
+
+      `;
+
+    }
+
+
+
+    /* =========================================================
+       SCREEN 1 — MOOD
     ========================================================= */
 
     function showMood() {
 
-
       panel.innerHTML = `
 
-        <div class="fade">
+        ${progress(1)}
 
-          ${progress(1)}
+        <div class="eyebrow">
+          Your Nha Trang
+        </div>
 
+        <h1 class="title">
+          Choose your travel mood
+        </h1>
 
-          <div class="eyebrow">
-            Your Nha Trang
-          </div>
+        <p class="subtitle">
+          Tell us how you want Nha Trang to feel.
+        </p>
 
+        <div class="options moods">
 
-          <h1 class="title">
-            Choose your travel mood
-          </h1>
+          ${option("Romance", "❤️")}
 
+          ${option("Relaxation", "🌿")}
 
-          <p class="subtitle">
+          ${option("Food", "🍜")}
 
-            Tell us how you want
-            Nha Trang to feel.
+          ${option("Adventure", "🏄")}
 
-          </p>
-
-
-          <div class="options moods">
-
-
-            <button
-              class="option-button"
-              data-value="Romance"
-            >
-
-              <div class="option-icon">
-                ❤️
-              </div>
-
-              <div class="option-label">
-                Romance
-              </div>
-
-            </button>
-
-
-
-            <button
-              class="option-button"
-              data-value="Relaxation"
-            >
-
-              <div class="option-icon">
-                🌿
-              </div>
-
-              <div class="option-label">
-                Relaxation
-              </div>
-
-            </button>
-
-
-
-            <button
-              class="option-button"
-              data-value="Food"
-            >
-
-              <div class="option-icon">
-                🍜
-              </div>
-
-              <div class="option-label">
-                Food
-              </div>
-
-            </button>
-
-
-
-            <button
-              class="option-button"
-              data-value="Adventure"
-            >
-
-              <div class="option-icon">
-                🏄
-              </div>
-
-              <div class="option-label">
-                Adventure
-              </div>
-
-            </button>
-
-
-
-            <button
-              class="option-button"
-              data-value="Culture"
-            >
-
-              <div class="option-icon">
-                🏮
-              </div>
-
-              <div class="option-label">
-                Culture
-              </div>
-
-            </button>
-
-
-          </div>
-
-
-          <button
-            class="next-button"
-            id="moodNext"
-          >
-
-            CONTINUE →
-
-          </button>
+          ${option("Culture", "🏮")}
 
         </div>
+
+        <button
+          class="next-button"
+          id="moodNext"
+        >
+          CONTINUE →
+        </button>
 
       `;
 
 
-
-      const buttons =
-        panel.querySelectorAll(
-          ".option-button"
-        );
-
-
-      const next =
-        document.getElementById(
-          "moodNext"
-        );
-
-
-
-      buttons.forEach(
-
-        button => {
-
-          button.addEventListener(
-
-            "click",
-
-            () => {
-
-
-              buttons.forEach(
-
-                b =>
-                  b.classList.remove(
-                    "selected"
-                  )
-
-              );
-
-
-              button.classList.add(
-                "selected"
-              );
-
-
-              answers.mood =
-                button.dataset.value;
-
-
-              next.classList.add(
-                "enabled"
-              );
-
-            }
-
-          );
-
-        }
-
-      );
-
-
-
-      next.addEventListener(
-
-        "click",
-
+      setupSingleSelection(
+        "mood",
+        "moodNext",
         showCompanion
-
       );
 
     }
@@ -1597,87 +1853,53 @@
 
 
     /* =========================================================
-       SCREEN 2
-       WHO WITH?
+       SCREEN 2 — COMPANION
     ========================================================= */
 
     function showCompanion() {
-
 
       panel.innerHTML = `
 
         ${progress(2)}
 
-
         <div class="eyebrow">
           Personalise your journey
         </div>
-
 
         <h1 class="title">
           Who are you travelling with?
         </h1>
 
-
         <p class="subtitle">
-
-          We'll shape your Nha Trang
-          story around your trip.
-
+          We'll shape your Nha Trang story around your trip.
         </p>
-
 
         <div class="options">
 
+          ${option("Solo", "🧳")}
 
-          ${simpleOption(
-            "Solo",
-            "🧳"
-          )}
+          ${option("Partner", "💛")}
 
+          ${option("Friends", "👯")}
 
-          ${simpleOption(
-            "Partner",
-            "💛"
-          )}
-
-
-          ${simpleOption(
-            "Friends",
-            "👯"
-          )}
-
-
-          ${simpleOption(
-            "Family",
-            "👨‍👩‍👧"
-          )}
-
+          ${option("Family", "👨‍👩‍👧")}
 
         </div>
-
 
         <button
           class="next-button"
           id="companionNext"
         >
-
           CONTINUE →
-
         </button>
 
       `;
 
 
-
-      singleSelection(
-
+      setupSingleSelection(
         "companion",
-
         "companionNext",
-
         showLength
-
       );
 
     }
@@ -1685,87 +1907,53 @@
 
 
     /* =========================================================
-       SCREEN 3
-       TRIP LENGTH
+       SCREEN 3 — LENGTH
     ========================================================= */
 
     function showLength() {
-
 
       panel.innerHTML = `
 
         ${progress(3)}
 
-
         <div class="eyebrow">
           Personalise your journey
         </div>
-
 
         <h1 class="title">
           How long is your trip?
         </h1>
 
-
         <p class="subtitle">
-
-          Choose the length of your
-          Nha Trang escape.
-
+          Choose the length of your Nha Trang escape.
         </p>
-
 
         <div class="options">
 
+          ${option("2 days", "02")}
 
-          ${simpleOption(
-            "2 days",
-            "02"
-          )}
+          ${option("3 days", "03")}
 
+          ${option("4 days", "04")}
 
-          ${simpleOption(
-            "3 days",
-            "03"
-          )}
-
-
-          ${simpleOption(
-            "4 days",
-            "04"
-          )}
-
-
-          ${simpleOption(
-            "5+ days",
-            "05+"
-          )}
-
+          ${option("5+ days", "05+")}
 
         </div>
-
 
         <button
           class="next-button"
           id="lengthNext"
         >
-
           CONTINUE →
-
         </button>
 
       `;
 
 
-
-      singleSelection(
-
+      setupSingleSelection(
         "length",
-
         "lengthNext",
-
         showPriorities
-
       );
 
     }
@@ -1773,89 +1961,54 @@
 
 
     /* =========================================================
-       SCREEN 4
-       PRIORITIES
+       SCREEN 4 — PRIORITIES
     ========================================================= */
 
     function showPriorities() {
+
+      answers.priorities = [];
 
 
       panel.innerHTML = `
 
         ${progress(4)}
 
-
         <div class="eyebrow">
           One last thing
         </div>
-
 
         <h1 class="title">
           What matters most?
         </h1>
 
-
         <p class="subtitle">
-
-          Choose up to two experiences
-          that should shape your story.
-
+          Choose two experiences that should shape your story.
         </p>
-
 
         <div class="options">
 
+          ${option("Calm", "🌊")}
 
-          ${simpleOption(
-            "Calm",
-            "🌊"
-          )}
+          ${option("Local food", "🍜")}
 
+          ${option("Nightlife", "✨")}
 
-          ${simpleOption(
-            "Local food",
-            "🍜"
-          )}
+          ${option("Culture", "🏮")}
 
+          ${option("Wellness", "🌿")}
 
-          ${simpleOption(
-            "Nightlife",
-            "✨"
-          )}
-
-
-          ${simpleOption(
-            "Culture",
-            "🏮"
-          )}
-
-
-          ${simpleOption(
-            "Wellness",
-            "🌿"
-          )}
-
-
-          ${simpleOption(
-            "Exploration",
-            "🗺️"
-          )}
-
+          ${option("Exploration", "🗺️")}
 
         </div>
-
 
         <button
           class="next-button"
           id="priorityNext"
         >
-
           CREATE MY NHA TRANG ✦
-
         </button>
 
       `;
-
 
 
       const buttons =
@@ -1868,11 +2021,6 @@
         document.getElementById(
           "priorityNext"
         );
-
-
-
-      answers.priorities = [];
-
 
 
       buttons.forEach(
@@ -1915,9 +2063,7 @@
               else {
 
                 if (
-                  answers.priorities.length
-                  >=
-                  2
+                  answers.priorities.length >= 2
                 ) {
 
                   return;
@@ -1937,11 +2083,8 @@
               }
 
 
-
               if (
-                answers.priorities.length
-                ===
-                2
+                answers.priorities.length === 2
               ) {
 
                 next.classList.add(
@@ -1968,13 +2111,9 @@
       );
 
 
-
       next.addEventListener(
-
         "click",
-
         showAI
-
       );
 
     }
@@ -1982,47 +2121,14 @@
 
 
     /* =========================================================
-       SIMPLE OPTION TEMPLATE
+       SINGLE SELECTION
     ========================================================= */
 
-    function simpleOption(
-      name,
-      icon
-    ) {
-
-      return `
-
-        <button
-          class="option-button"
-          data-value="${name}"
-        >
-
-          <div class="option-icon">
-            ${icon}
-          </div>
-
-          <div class="option-label">
-            ${name}
-          </div>
-
-        </button>
-
-      `;
-
-    }
-
-
-
-    /* =========================================================
-       SINGLE SELECTION LOGIC
-    ========================================================= */
-
-    function singleSelection(
+    function setupSingleSelection(
       answerKey,
-      buttonID,
+      nextID,
       nextScreen
     ) {
-
 
       const buttons =
         panel.querySelectorAll(
@@ -2032,9 +2138,8 @@
 
       const next =
         document.getElementById(
-          buttonID
+          nextID
         );
-
 
 
       buttons.forEach(
@@ -2082,13 +2187,9 @@
       );
 
 
-
       next.addEventListener(
-
         "click",
-
         nextScreen
-
       );
 
     }
@@ -2096,40 +2197,30 @@
 
 
     /* =========================================================
-       AI GENERATING SCREEN
+       AI GENERATION
     ========================================================= */
 
     function showAI() {
-
 
       panel.innerHTML = `
 
         <div class="ai-loader">
 
-
           <div class="eyebrow">
             AI Personalisation
           </div>
-
 
           <div class="ai-circle">
             ✦ AI
           </div>
 
-
           <div class="loading-text">
             Creating Your Nha Trang...
           </div>
 
-
           <div class="loading-subtitle">
-
-            Matching your mood,
-            travel style and
-            local experiences.
-
+            Matching your mood, travel style and local experiences.
           </div>
-
 
           <div class="loading-bar">
 
@@ -2139,19 +2230,14 @@
 
           </div>
 
-
         </div>
 
       `;
 
 
-
       setTimeout(
-
         showPostcard,
-
-        2900
-
+        2800
       );
 
     }
@@ -2159,58 +2245,47 @@
 
 
     /* =========================================================
-       POSTCARD RESULT
+       POSTCARD
     ========================================================= */
 
     function showPostcard() {
-
 
       panel.innerHTML = `
 
         <div class="postcard-wrapper">
 
-
           <div class="eyebrow">
             Made for you
           </div>
 
-
           <div class="postcard">
-
 
             <div class="postcard-small">
               Personalised by AI
             </div>
 
-
             <div class="postcard-title">
               YOUR NHA TRANG
             </div>
 
-
             <div class="postcard-line">
 
-              Quiet waves
-              in the morning.
+              Quiet waves in the morning.
 
               <br>
 
-              Local flavours
-              after sunset.
+              Local flavours after sunset.
 
               <br>
 
-              Four slow days
-              with friends.
+              Four slow days with friends.
 
               <br>
 
-              A calmer side of
-              Nha Trang,
+              A calmer side of Nha Trang,
               waiting for you.
 
             </div>
-
 
             <div class="postcard-tags">
 
@@ -2236,44 +2311,30 @@
 
             </div>
 
-
             <div class="postcard-voco">
-
-              voco Scenia Bay
-              Nha Trang
-
+              voco Scenia Bay Nha Trang
             </div>
-
 
           </div>
 
 
-
           <div class="postcard-actions">
-
 
             <button
               class="share-button"
-              onclick="showShare()"
+              onclick="showShareScreen()"
             >
-
               SHARE YOUR POSTCARD ↗
-
             </button>
-
 
             <button
               class="restart-button"
               onclick="restartExperience()"
             >
-
               ↻
-
             </button>
 
-
           </div>
-
 
         </div>
 
@@ -2284,65 +2345,374 @@
 
 
     /* =========================================================
-       SHARE SCREEN
+       SHARE PLATFORM
     ========================================================= */
 
-    function showShare() {
-
+    function showShareScreen() {
 
       panel.innerHTML = `
 
         <div class="share-screen">
 
-
           <div class="eyebrow">
             Share Your Nha Trang
           </div>
-
 
           <div class="share-icon">
             ↗
           </div>
 
-
           <h1 class="title">
-            Your story is ready to share.
+            Share your story
           </h1>
 
-
           <p class="subtitle">
-
-            Turn one personalised
-            experience into new
-            brand discovery.
-
+            Let your Nha Trang experience travel beyond your screen.
           </p>
 
+          <div class="platforms">
 
-          <div class="social-row">
+            <button
+              class="platform-button"
+              onclick="startDiscovery('Instagram')"
+            >
 
+              <span>
+                ◎
+              </span>
 
-            <div class="social">
-              TikTok
-            </div>
-
-
-            <div class="social">
               Instagram
+
+            </button>
+
+
+            <button
+              class="platform-button"
+              onclick="startDiscovery('TikTok')"
+            >
+
+              <span>
+                ♪
+              </span>
+
+              TikTok
+
+            </button>
+
+          </div>
+
+        </div>
+
+      `;
+
+    }
+
+
+
+    /* =========================================================
+       DISCOVERY ANIMATION
+    ========================================================= */
+
+    function startDiscovery(
+      platform
+    ) {
+
+
+      /* TRY TO PLAY MUSIC */
+
+      musicPlayer.currentTime = 0;
+
+
+      musicPlayer
+        .play()
+        .catch(() => {
+
+          console.log(
+            "No music file detected. Animation continues normally."
+          );
+
+        });
+
+
+
+      panel.innerHTML = `
+
+        <div class="discovery-screen">
+
+          <div
+            class="sharing-platform"
+          >
+            Shared to ${platform}
+          </div>
+
+
+          <div class="discovery-title">
+            One share travels further.
+          </div>
+
+
+          <div class="journey-network">
+
+
+            <!-- 1 TRAVELLER -->
+
+            <div
+              class="network-step"
+              id="step1"
+            >
+
+              <div class="network-circle">
+
+                <div class="network-number">
+                  1
+                </div>
+
+                <div class="network-icon">
+                  👤
+                </div>
+
+              </div>
+
+              <div class="network-label">
+                Traveller
+              </div>
+
             </div>
 
 
-            <div class="social">
-              Facebook
+
+            <div
+              class="network-arrow"
+              id="arrow1"
+            >
+              →
             </div>
+
+
+
+            <!-- 5 FRIENDS -->
+
+            <div
+              class="network-step"
+              id="step2"
+            >
+
+              <div class="network-circle">
+
+                <div class="network-number">
+                  5
+                </div>
+
+                <div class="network-icon">
+                  👥
+                </div>
+
+              </div>
+
+              <div class="network-label">
+                Friends
+              </div>
+
+            </div>
+
+
+
+            <div
+              class="network-arrow"
+              id="arrow2"
+            >
+              →
+            </div>
+
+
+
+            <!-- 20 VIEWS -->
+
+            <div
+              class="network-step"
+              id="step3"
+            >
+
+              <div class="network-circle">
+
+                <div class="network-number">
+                  20
+                </div>
+
+                <div class="network-icon">
+                  👁
+                </div>
+
+              </div>
+
+              <div class="network-label">
+                Views
+              </div>
+
+            </div>
+
 
 
           </div>
 
 
+
+          <div
+            class="more-discovery"
+            id="moreDiscovery"
+          >
+
+            <div class="more-discovery-small">
+              Organic reach
+            </div>
+
+            <div class="more-discovery-big">
+              ✦ MORE DISCOVERY ✦
+            </div>
+
+            <div class="discovery-line"></div>
+
+          </div>
+
+
+
+          <button
+            class="replay-button"
+            id="replayButton"
+            onclick="startDiscovery('${platform}')"
+          >
+            ↻ Replay animation
+          </button>
+
+
         </div>
 
       `;
+
+
+
+      /* ==========================================
+         TIMED ANIMATION
+      ========================================== */
+
+
+      setTimeout(
+        () => {
+
+          document
+            .getElementById(
+              "step1"
+            )
+            .classList
+            .add(
+              "show"
+            );
+
+        },
+        300
+      );
+
+
+      setTimeout(
+        () => {
+
+          document
+            .getElementById(
+              "arrow1"
+            )
+            .classList
+            .add(
+              "show"
+            );
+
+        },
+        1050
+      );
+
+
+      setTimeout(
+        () => {
+
+          document
+            .getElementById(
+              "step2"
+            )
+            .classList
+            .add(
+              "show"
+            );
+
+        },
+        1350
+      );
+
+
+      setTimeout(
+        () => {
+
+          document
+            .getElementById(
+              "arrow2"
+            )
+            .classList
+            .add(
+              "show"
+            );
+
+        },
+        2150
+      );
+
+
+      setTimeout(
+        () => {
+
+          document
+            .getElementById(
+              "step3"
+            )
+            .classList
+            .add(
+              "show"
+            );
+
+        },
+        2450
+      );
+
+
+      setTimeout(
+        () => {
+
+          document
+            .getElementById(
+              "moreDiscovery"
+            )
+            .classList
+            .add(
+              "show"
+            );
+
+        },
+        3550
+      );
+
+
+      setTimeout(
+        () => {
+
+          document
+            .getElementById(
+              "replayButton"
+            )
+            .classList
+            .add(
+              "show"
+            );
+
+        },
+        4500
+      );
 
     }
 
@@ -2354,6 +2724,7 @@
 
     function restartExperience() {
 
+      musicPlayer.pause();
 
       answers.mood = "";
 
@@ -2363,7 +2734,6 @@
 
       answers.priorities = [];
 
-
       showMood();
 
     }
@@ -2371,14 +2741,13 @@
 
 
     /* =========================================================
-       START EXPERIENCE
+       START
     ========================================================= */
 
     showMood();
 
 
   </script>
-
 
 </body>
 
