@@ -1,0 +1,2385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Your Nha Trang | voco Scenia Bay</title>
+
+
+  <style>
+
+    /* =========================================================
+       RESET
+    ========================================================= */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+
+    body {
+
+      min-height: 100vh;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      background:
+        linear-gradient(
+          135deg,
+          #f6bb21 0%,
+          #facb42 50%,
+          #f3b81e 100%
+        );
+
+      color: #17233e;
+
+      overflow: hidden;
+
+    }
+
+
+
+    /* =========================================================
+       MAIN SCREEN
+    ========================================================= */
+
+    .screen {
+
+      width: 100%;
+      min-height: 100vh;
+
+      position: relative;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      padding: 40px;
+
+    }
+
+
+
+    /* =========================================================
+       BACKGROUND DECORATION
+    ========================================================= */
+
+    .background-circle-one {
+
+      width: 430px;
+      height: 430px;
+
+      position: absolute;
+
+      top: -190px;
+      right: -110px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(
+          255,
+          255,
+          255,
+          0.12
+        );
+
+    }
+
+
+    .background-circle-two {
+
+      width: 330px;
+      height: 330px;
+
+      position: absolute;
+
+      bottom: -180px;
+      left: -100px;
+
+      border-radius: 50%;
+
+      border:
+        1px solid
+        rgba(
+          23,
+          35,
+          62,
+          0.12
+        );
+
+    }
+
+
+
+    /* =========================================================
+       VOCO BRAND
+    ========================================================= */
+
+    .brand {
+
+      position: absolute;
+
+      top: 32px;
+      left: 50%;
+
+      transform:
+        translateX(-50%);
+
+      text-align: center;
+
+      z-index: 20;
+
+    }
+
+
+    .voco {
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 50px;
+
+      font-weight: 600;
+
+      letter-spacing: 4px;
+
+      line-height: 1;
+
+    }
+
+
+    .by-ihg {
+
+      margin-top: 9px;
+
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+
+      gap: 10px;
+
+      font-size: 10px;
+
+      font-weight: 700;
+
+      letter-spacing: 3px;
+
+      text-transform: uppercase;
+
+    }
+
+
+    .by-ihg::before,
+    .by-ihg::after {
+
+      content: "";
+
+      width: 28px;
+      height: 1px;
+
+      background: #17233e;
+
+    }
+
+
+
+    /* =========================================================
+       MAIN CARD
+    ========================================================= */
+
+    .panel {
+
+      width:
+        min(
+          650px,
+          94vw
+        );
+
+      min-height: 545px;
+
+      padding:
+        50px
+        52px;
+
+      background:
+        #fffdf8;
+
+      border-radius: 30px;
+
+      box-shadow:
+        0
+        25px
+        70px
+        rgba(
+          0,
+          0,
+          0,
+          0.14
+        );
+
+      position: relative;
+
+      z-index: 10;
+
+      text-align: center;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: center;
+
+      overflow: hidden;
+
+    }
+
+
+
+    /* =========================================================
+       COMMON TEXT
+    ========================================================= */
+
+    .eyebrow {
+
+      margin-bottom: 13px;
+
+      font-size: 11px;
+
+      font-weight: 700;
+
+      letter-spacing: 4px;
+
+      text-transform: uppercase;
+
+      color: #9b8250;
+
+    }
+
+
+    .title {
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 38px;
+
+      font-weight: 500;
+
+      line-height: 1.2;
+
+      margin-bottom: 12px;
+
+      color: #17233e;
+
+    }
+
+
+    .subtitle {
+
+      max-width: 460px;
+
+      margin:
+        0 auto
+        34px;
+
+      font-size: 14px;
+
+      line-height: 1.65;
+
+      color: #777;
+
+    }
+
+
+
+    /* =========================================================
+       PROGRESS
+    ========================================================= */
+
+    .progress {
+
+      width: 100%;
+
+      display: flex;
+
+      justify-content: center;
+
+      gap: 8px;
+
+      margin-bottom: 30px;
+
+    }
+
+
+    .progress-dot {
+
+      width: 8px;
+      height: 8px;
+
+      border-radius: 20px;
+
+      background: #ddd8cd;
+
+      transition:
+        0.3s ease;
+
+    }
+
+
+    .progress-dot.active {
+
+      width: 28px;
+
+      background: #f6bb21;
+
+    }
+
+
+
+    /* =========================================================
+       OPTION GRID
+    ========================================================= */
+
+    .options {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(
+          2,
+          1fr
+        );
+
+      gap: 14px;
+
+    }
+
+
+    .options.moods {
+
+      grid-template-columns:
+        repeat(
+          3,
+          1fr
+        );
+
+    }
+
+
+
+    /* =========================================================
+       OPTION BUTTON
+    ========================================================= */
+
+    .option-button {
+
+      min-height: 86px;
+
+      border:
+        1.5px solid
+        #e3ded3;
+
+      border-radius: 17px;
+
+      background: white;
+
+      cursor: pointer;
+
+      padding:
+        16px
+        14px;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+      justify-content: center;
+
+      gap: 8px;
+
+      color: #17233e;
+
+      transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+
+    }
+
+
+    .option-button:hover {
+
+      transform:
+        translateY(-3px);
+
+      border-color:
+        #17233e;
+
+      box-shadow:
+        0
+        10px
+        25px
+        rgba(
+          0,
+          0,
+          0,
+          0.08
+        );
+
+    }
+
+
+    .option-button.selected {
+
+      background: #17233e;
+
+      border-color: #17233e;
+
+      color: white;
+
+      transform:
+        translateY(-2px);
+
+      box-shadow:
+        0
+        10px
+        25px
+        rgba(
+          23,
+          35,
+          62,
+          0.18
+        );
+
+    }
+
+
+    .option-icon {
+
+      font-size: 26px;
+
+      line-height: 1;
+
+    }
+
+
+    .option-label {
+
+      font-size: 14px;
+
+      font-weight: 700;
+
+    }
+
+
+
+    /* =========================================================
+       NEXT BUTTON
+    ========================================================= */
+
+    .next-button {
+
+      width: 100%;
+
+      margin-top: 26px;
+
+      padding: 17px 20px;
+
+      border: none;
+
+      border-radius: 14px;
+
+      background:
+        #17233e;
+
+      color: white;
+
+      cursor: pointer;
+
+      font-size: 13px;
+
+      font-weight: 700;
+
+      letter-spacing: 1.2px;
+
+      opacity: 0.35;
+
+      pointer-events: none;
+
+      transition:
+        0.2s ease;
+
+    }
+
+
+    .next-button.enabled {
+
+      opacity: 1;
+
+      pointer-events: auto;
+
+    }
+
+
+    .next-button.enabled:hover {
+
+      transform:
+        translateY(-2px);
+
+      box-shadow:
+        0
+        10px
+        25px
+        rgba(
+          23,
+          35,
+          62,
+          0.22
+        );
+
+    }
+
+
+
+    /* =========================================================
+       LOADING SCREEN
+    ========================================================= */
+
+    .ai-loader {
+
+      animation:
+        fadeUp
+        0.6s
+        ease;
+
+    }
+
+
+    .ai-circle {
+
+      width: 115px;
+      height: 115px;
+
+      margin:
+        20px auto
+        29px;
+
+      border-radius: 50%;
+
+      position: relative;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      background:
+        #f6bb21;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 29px;
+
+      font-weight: 600;
+
+      color: #17233e;
+
+    }
+
+
+    .ai-circle::before {
+
+      content: "";
+
+      position: absolute;
+
+      width: 135px;
+      height: 135px;
+
+      border-radius: 50%;
+
+      border:
+        1px solid
+        #f6bb21;
+
+      animation:
+        pulse
+        1.5s
+        ease-in-out
+        infinite;
+
+    }
+
+
+    .loading-text {
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 34px;
+
+      font-weight: 500;
+
+      margin-bottom: 12px;
+
+    }
+
+
+    .loading-subtitle {
+
+      font-size: 14px;
+
+      color: #777;
+
+    }
+
+
+    .loading-bar {
+
+      width: 200px;
+      height: 4px;
+
+      margin:
+        30px auto
+        0;
+
+      border-radius: 10px;
+
+      background:
+        #ece7dd;
+
+      overflow: hidden;
+
+    }
+
+
+    .loading-progress {
+
+      width: 0%;
+      height: 100%;
+
+      background:
+        #f6bb21;
+
+      animation:
+        load
+        2.7s
+        ease
+        forwards;
+
+    }
+
+
+
+    /* =========================================================
+       POSTCARD
+    ========================================================= */
+
+    .postcard-wrapper {
+
+      animation:
+        fadeUp
+        0.65s
+        ease;
+
+    }
+
+
+    .postcard {
+
+      width: 100%;
+
+      min-height: 345px;
+
+      border-radius: 24px;
+
+      padding:
+        38px
+        42px;
+
+      position: relative;
+
+      overflow: hidden;
+
+      text-align: left;
+
+      background:
+
+        radial-gradient(
+          circle at top right,
+          rgba(
+            246,
+            187,
+            33,
+            0.5
+          ),
+          transparent 35%
+        ),
+
+        linear-gradient(
+          140deg,
+          #18304d,
+          #1f4962 55%,
+          #4b7b83
+        );
+
+      color: white;
+
+      box-shadow:
+        0
+        18px
+        45px
+        rgba(
+          23,
+          35,
+          62,
+          0.25
+        );
+
+    }
+
+
+    .postcard::before {
+
+      content: "";
+
+      width: 310px;
+      height: 310px;
+
+      position: absolute;
+
+      bottom: -205px;
+      right: -60px;
+
+      border-radius: 50%;
+
+      border:
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.25
+        );
+
+    }
+
+
+    .postcard-small {
+
+      font-size: 10px;
+
+      font-weight: 700;
+
+      letter-spacing: 4px;
+
+      text-transform: uppercase;
+
+      color:
+        rgba(
+          255,
+          255,
+          255,
+          0.7
+        );
+
+      margin-bottom: 16px;
+
+    }
+
+
+    .postcard-title {
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 41px;
+
+      font-weight: 500;
+
+      margin-bottom: 27px;
+
+    }
+
+
+    .postcard-line {
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 21px;
+
+      line-height: 1.55;
+
+      max-width: 480px;
+
+    }
+
+
+    .postcard-voco {
+
+      margin-top: 32px;
+
+      font-size: 11px;
+
+      letter-spacing: 2px;
+
+      text-transform: uppercase;
+
+      color:
+        rgba(
+          255,
+          255,
+          255,
+          0.68
+        );
+
+    }
+
+
+
+    /* =========================================================
+       TAGS
+    ========================================================= */
+
+    .postcard-tags {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 8px;
+
+      margin-top: 22px;
+
+    }
+
+
+    .tag {
+
+      padding:
+        7px
+        11px;
+
+      border-radius: 20px;
+
+      background:
+        rgba(
+          255,
+          255,
+          255,
+          0.14
+        );
+
+      border:
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.2
+        );
+
+      font-size: 10px;
+
+      letter-spacing: 0.6px;
+
+    }
+
+
+
+    /* =========================================================
+       SHARE BUTTONS
+    ========================================================= */
+
+    .postcard-actions {
+
+      margin-top: 22px;
+
+      display: flex;
+
+      gap: 12px;
+
+    }
+
+
+    .share-button {
+
+      flex: 1;
+
+      padding: 15px;
+
+      border: none;
+
+      border-radius: 13px;
+
+      background: #17233e;
+
+      color: white;
+
+      cursor: pointer;
+
+      font-size: 12px;
+
+      font-weight: 700;
+
+      letter-spacing: 1px;
+
+    }
+
+
+    .restart-button {
+
+      padding:
+        15px
+        20px;
+
+      border-radius: 13px;
+
+      background: white;
+
+      color: #17233e;
+
+      border:
+        1.5px solid
+        #ddd8ce;
+
+      cursor: pointer;
+
+      font-size: 12px;
+
+      font-weight: 700;
+
+    }
+
+
+
+    /* =========================================================
+       SHARE SCREEN
+    ========================================================= */
+
+    .share-screen {
+
+      animation:
+        fadeUp
+        0.6s
+        ease;
+
+    }
+
+
+    .share-icon {
+
+      width: 96px;
+      height: 96px;
+
+      margin:
+        15px auto
+        25px;
+
+      border-radius: 50%;
+
+      background: #f6bb21;
+
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+
+      font-size: 35px;
+
+    }
+
+
+    .social-row {
+
+      display: flex;
+
+      justify-content: center;
+
+      gap: 12px;
+
+      margin-top: 30px;
+
+    }
+
+
+    .social {
+
+      padding:
+        14px
+        18px;
+
+      border-radius: 12px;
+
+      border:
+        1.5px solid
+        #e1dcd2;
+
+      background: white;
+
+      font-size: 12px;
+
+      font-weight: 700;
+
+      color: #17233e;
+
+    }
+
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    .footer {
+
+      position: absolute;
+
+      bottom: 27px;
+
+      left: 50%;
+
+      transform:
+        translateX(-50%);
+
+      z-index: 5;
+
+      width: 100%;
+
+      text-align: center;
+
+      font-size: 10px;
+
+      letter-spacing: 3px;
+
+      text-transform: uppercase;
+
+      color:
+        rgba(
+          23,
+          35,
+          62,
+          0.58
+        );
+
+    }
+
+
+
+    /* =========================================================
+       ANIMATIONS
+    ========================================================= */
+
+    @keyframes fadeUp {
+
+      from {
+
+        opacity: 0;
+
+        transform:
+          translateY(12px);
+
+      }
+
+
+      to {
+
+        opacity: 1;
+
+        transform:
+          translateY(0);
+
+      }
+
+    }
+
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+
+        transform:
+          scale(0.9);
+
+        opacity: 0.4;
+
+      }
+
+
+      50% {
+
+        transform:
+          scale(1.06);
+
+        opacity: 1;
+
+      }
+
+    }
+
+
+    @keyframes load {
+
+      from {
+
+        width: 0%;
+
+      }
+
+
+      to {
+
+        width: 100%;
+
+      }
+
+    }
+
+
+
+    /* =========================================================
+       MOBILE
+    ========================================================= */
+
+    @media
+    (
+      max-width: 650px
+    ) {
+
+      .screen {
+
+        padding: 20px;
+
+      }
+
+
+      .brand {
+
+        top: 22px;
+
+      }
+
+
+      .voco {
+
+        font-size: 38px;
+
+      }
+
+
+      .panel {
+
+        padding:
+          38px
+          23px;
+
+      }
+
+
+      .title {
+
+        font-size: 29px;
+
+      }
+
+
+      .options.moods {
+
+        grid-template-columns:
+          repeat(
+            2,
+            1fr
+          );
+
+      }
+
+
+      .postcard {
+
+        padding:
+          30px
+          25px;
+
+      }
+
+
+      .postcard-title {
+
+        font-size: 32px;
+
+      }
+
+
+      .postcard-line {
+
+        font-size: 18px;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+
+  <div class="screen">
+
+
+    <div class="background-circle-one"></div>
+
+    <div class="background-circle-two"></div>
+
+
+
+    <!-- =====================================================
+         BRAND
+    ====================================================== -->
+
+    <div class="brand">
+
+      <div class="voco">
+        voco
+      </div>
+
+      <div class="by-ihg">
+        by IHG
+      </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main
+      class="panel"
+      id="panel"
+    >
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <div class="footer">
+      Your Nha Trang · voco Scenia Bay
+    </div>
+
+
+  </div>
+
+
+
+  <script>
+
+
+    /* =========================================================
+       USER ANSWERS
+    ========================================================= */
+
+    const answers = {
+
+      mood: "",
+
+      companion: "",
+
+      length: "",
+
+      priorities: []
+
+    };
+
+
+
+    const panel =
+      document.getElementById(
+        "panel"
+      );
+
+
+
+    /* =========================================================
+       PROGRESS BAR
+    ========================================================= */
+
+    function progress(
+      current
+    ) {
+
+      let html =
+        '<div class="progress">';
+
+
+      for (
+        let i = 1;
+        i <= 4;
+        i++
+      ) {
+
+        html += `
+
+          <div
+            class="
+              progress-dot
+              ${i === current ? "active" : ""}
+            "
+          ></div>
+
+        `;
+
+      }
+
+
+      html +=
+        '</div>';
+
+
+      return html;
+
+    }
+
+
+
+    /* =========================================================
+       SCREEN 1
+       CHOOSE MOOD
+    ========================================================= */
+
+    function showMood() {
+
+
+      panel.innerHTML = `
+
+        <div class="fade">
+
+          ${progress(1)}
+
+
+          <div class="eyebrow">
+            Your Nha Trang
+          </div>
+
+
+          <h1 class="title">
+            Choose your travel mood
+          </h1>
+
+
+          <p class="subtitle">
+
+            Tell us how you want
+            Nha Trang to feel.
+
+          </p>
+
+
+          <div class="options moods">
+
+
+            <button
+              class="option-button"
+              data-value="Romance"
+            >
+
+              <div class="option-icon">
+                ❤️
+              </div>
+
+              <div class="option-label">
+                Romance
+              </div>
+
+            </button>
+
+
+
+            <button
+              class="option-button"
+              data-value="Relaxation"
+            >
+
+              <div class="option-icon">
+                🌿
+              </div>
+
+              <div class="option-label">
+                Relaxation
+              </div>
+
+            </button>
+
+
+
+            <button
+              class="option-button"
+              data-value="Food"
+            >
+
+              <div class="option-icon">
+                🍜
+              </div>
+
+              <div class="option-label">
+                Food
+              </div>
+
+            </button>
+
+
+
+            <button
+              class="option-button"
+              data-value="Adventure"
+            >
+
+              <div class="option-icon">
+                🏄
+              </div>
+
+              <div class="option-label">
+                Adventure
+              </div>
+
+            </button>
+
+
+
+            <button
+              class="option-button"
+              data-value="Culture"
+            >
+
+              <div class="option-icon">
+                🏮
+              </div>
+
+              <div class="option-label">
+                Culture
+              </div>
+
+            </button>
+
+
+          </div>
+
+
+          <button
+            class="next-button"
+            id="moodNext"
+          >
+
+            CONTINUE →
+
+          </button>
+
+        </div>
+
+      `;
+
+
+
+      const buttons =
+        panel.querySelectorAll(
+          ".option-button"
+        );
+
+
+      const next =
+        document.getElementById(
+          "moodNext"
+        );
+
+
+
+      buttons.forEach(
+
+        button => {
+
+          button.addEventListener(
+
+            "click",
+
+            () => {
+
+
+              buttons.forEach(
+
+                b =>
+                  b.classList.remove(
+                    "selected"
+                  )
+
+              );
+
+
+              button.classList.add(
+                "selected"
+              );
+
+
+              answers.mood =
+                button.dataset.value;
+
+
+              next.classList.add(
+                "enabled"
+              );
+
+            }
+
+          );
+
+        }
+
+      );
+
+
+
+      next.addEventListener(
+
+        "click",
+
+        showCompanion
+
+      );
+
+    }
+
+
+
+    /* =========================================================
+       SCREEN 2
+       WHO WITH?
+    ========================================================= */
+
+    function showCompanion() {
+
+
+      panel.innerHTML = `
+
+        ${progress(2)}
+
+
+        <div class="eyebrow">
+          Personalise your journey
+        </div>
+
+
+        <h1 class="title">
+          Who are you travelling with?
+        </h1>
+
+
+        <p class="subtitle">
+
+          We'll shape your Nha Trang
+          story around your trip.
+
+        </p>
+
+
+        <div class="options">
+
+
+          ${simpleOption(
+            "Solo",
+            "🧳"
+          )}
+
+
+          ${simpleOption(
+            "Partner",
+            "💛"
+          )}
+
+
+          ${simpleOption(
+            "Friends",
+            "👯"
+          )}
+
+
+          ${simpleOption(
+            "Family",
+            "👨‍👩‍👧"
+          )}
+
+
+        </div>
+
+
+        <button
+          class="next-button"
+          id="companionNext"
+        >
+
+          CONTINUE →
+
+        </button>
+
+      `;
+
+
+
+      singleSelection(
+
+        "companion",
+
+        "companionNext",
+
+        showLength
+
+      );
+
+    }
+
+
+
+    /* =========================================================
+       SCREEN 3
+       TRIP LENGTH
+    ========================================================= */
+
+    function showLength() {
+
+
+      panel.innerHTML = `
+
+        ${progress(3)}
+
+
+        <div class="eyebrow">
+          Personalise your journey
+        </div>
+
+
+        <h1 class="title">
+          How long is your trip?
+        </h1>
+
+
+        <p class="subtitle">
+
+          Choose the length of your
+          Nha Trang escape.
+
+        </p>
+
+
+        <div class="options">
+
+
+          ${simpleOption(
+            "2 days",
+            "02"
+          )}
+
+
+          ${simpleOption(
+            "3 days",
+            "03"
+          )}
+
+
+          ${simpleOption(
+            "4 days",
+            "04"
+          )}
+
+
+          ${simpleOption(
+            "5+ days",
+            "05+"
+          )}
+
+
+        </div>
+
+
+        <button
+          class="next-button"
+          id="lengthNext"
+        >
+
+          CONTINUE →
+
+        </button>
+
+      `;
+
+
+
+      singleSelection(
+
+        "length",
+
+        "lengthNext",
+
+        showPriorities
+
+      );
+
+    }
+
+
+
+    /* =========================================================
+       SCREEN 4
+       PRIORITIES
+    ========================================================= */
+
+    function showPriorities() {
+
+
+      panel.innerHTML = `
+
+        ${progress(4)}
+
+
+        <div class="eyebrow">
+          One last thing
+        </div>
+
+
+        <h1 class="title">
+          What matters most?
+        </h1>
+
+
+        <p class="subtitle">
+
+          Choose up to two experiences
+          that should shape your story.
+
+        </p>
+
+
+        <div class="options">
+
+
+          ${simpleOption(
+            "Calm",
+            "🌊"
+          )}
+
+
+          ${simpleOption(
+            "Local food",
+            "🍜"
+          )}
+
+
+          ${simpleOption(
+            "Nightlife",
+            "✨"
+          )}
+
+
+          ${simpleOption(
+            "Culture",
+            "🏮"
+          )}
+
+
+          ${simpleOption(
+            "Wellness",
+            "🌿"
+          )}
+
+
+          ${simpleOption(
+            "Exploration",
+            "🗺️"
+          )}
+
+
+        </div>
+
+
+        <button
+          class="next-button"
+          id="priorityNext"
+        >
+
+          CREATE MY NHA TRANG ✦
+
+        </button>
+
+      `;
+
+
+
+      const buttons =
+        panel.querySelectorAll(
+          ".option-button"
+        );
+
+
+      const next =
+        document.getElementById(
+          "priorityNext"
+        );
+
+
+
+      answers.priorities = [];
+
+
+
+      buttons.forEach(
+
+        button => {
+
+          button.addEventListener(
+
+            "click",
+
+            () => {
+
+
+              const value =
+                button.dataset.value;
+
+
+              if (
+                button.classList.contains(
+                  "selected"
+                )
+              ) {
+
+                button.classList.remove(
+                  "selected"
+                );
+
+
+                answers.priorities =
+                  answers.priorities.filter(
+
+                    item =>
+                      item !== value
+
+                  );
+
+              }
+
+
+              else {
+
+                if (
+                  answers.priorities.length
+                  >=
+                  2
+                ) {
+
+                  return;
+
+                }
+
+
+                button.classList.add(
+                  "selected"
+                );
+
+
+                answers.priorities.push(
+                  value
+                );
+
+              }
+
+
+
+              if (
+                answers.priorities.length
+                ===
+                2
+              ) {
+
+                next.classList.add(
+                  "enabled"
+                );
+
+              }
+
+
+              else {
+
+                next.classList.remove(
+                  "enabled"
+                );
+
+              }
+
+            }
+
+          );
+
+        }
+
+      );
+
+
+
+      next.addEventListener(
+
+        "click",
+
+        showAI
+
+      );
+
+    }
+
+
+
+    /* =========================================================
+       SIMPLE OPTION TEMPLATE
+    ========================================================= */
+
+    function simpleOption(
+      name,
+      icon
+    ) {
+
+      return `
+
+        <button
+          class="option-button"
+          data-value="${name}"
+        >
+
+          <div class="option-icon">
+            ${icon}
+          </div>
+
+          <div class="option-label">
+            ${name}
+          </div>
+
+        </button>
+
+      `;
+
+    }
+
+
+
+    /* =========================================================
+       SINGLE SELECTION LOGIC
+    ========================================================= */
+
+    function singleSelection(
+      answerKey,
+      buttonID,
+      nextScreen
+    ) {
+
+
+      const buttons =
+        panel.querySelectorAll(
+          ".option-button"
+        );
+
+
+      const next =
+        document.getElementById(
+          buttonID
+        );
+
+
+
+      buttons.forEach(
+
+        button => {
+
+          button.addEventListener(
+
+            "click",
+
+            () => {
+
+
+              buttons.forEach(
+
+                b =>
+                  b.classList.remove(
+                    "selected"
+                  )
+
+              );
+
+
+              button.classList.add(
+                "selected"
+              );
+
+
+              answers[
+                answerKey
+              ] =
+                button.dataset.value;
+
+
+              next.classList.add(
+                "enabled"
+              );
+
+            }
+
+          );
+
+        }
+
+      );
+
+
+
+      next.addEventListener(
+
+        "click",
+
+        nextScreen
+
+      );
+
+    }
+
+
+
+    /* =========================================================
+       AI GENERATING SCREEN
+    ========================================================= */
+
+    function showAI() {
+
+
+      panel.innerHTML = `
+
+        <div class="ai-loader">
+
+
+          <div class="eyebrow">
+            AI Personalisation
+          </div>
+
+
+          <div class="ai-circle">
+            ✦ AI
+          </div>
+
+
+          <div class="loading-text">
+            Creating Your Nha Trang...
+          </div>
+
+
+          <div class="loading-subtitle">
+
+            Matching your mood,
+            travel style and
+            local experiences.
+
+          </div>
+
+
+          <div class="loading-bar">
+
+            <div
+              class="loading-progress"
+            ></div>
+
+          </div>
+
+
+        </div>
+
+      `;
+
+
+
+      setTimeout(
+
+        showPostcard,
+
+        2900
+
+      );
+
+    }
+
+
+
+    /* =========================================================
+       POSTCARD RESULT
+    ========================================================= */
+
+    function showPostcard() {
+
+
+      panel.innerHTML = `
+
+        <div class="postcard-wrapper">
+
+
+          <div class="eyebrow">
+            Made for you
+          </div>
+
+
+          <div class="postcard">
+
+
+            <div class="postcard-small">
+              Personalised by AI
+            </div>
+
+
+            <div class="postcard-title">
+              YOUR NHA TRANG
+            </div>
+
+
+            <div class="postcard-line">
+
+              Quiet waves
+              in the morning.
+
+              <br>
+
+              Local flavours
+              after sunset.
+
+              <br>
+
+              Four slow days
+              with friends.
+
+              <br>
+
+              A calmer side of
+              Nha Trang,
+              waiting for you.
+
+            </div>
+
+
+            <div class="postcard-tags">
+
+              <span class="tag">
+                🌿 Relaxation
+              </span>
+
+              <span class="tag">
+                👯 Friends
+              </span>
+
+              <span class="tag">
+                4 days
+              </span>
+
+              <span class="tag">
+                🌊 Calm
+              </span>
+
+              <span class="tag">
+                🍜 Local food
+              </span>
+
+            </div>
+
+
+            <div class="postcard-voco">
+
+              voco Scenia Bay
+              Nha Trang
+
+            </div>
+
+
+          </div>
+
+
+
+          <div class="postcard-actions">
+
+
+            <button
+              class="share-button"
+              onclick="showShare()"
+            >
+
+              SHARE YOUR POSTCARD ↗
+
+            </button>
+
+
+            <button
+              class="restart-button"
+              onclick="restartExperience()"
+            >
+
+              ↻
+
+            </button>
+
+
+          </div>
+
+
+        </div>
+
+      `;
+
+    }
+
+
+
+    /* =========================================================
+       SHARE SCREEN
+    ========================================================= */
+
+    function showShare() {
+
+
+      panel.innerHTML = `
+
+        <div class="share-screen">
+
+
+          <div class="eyebrow">
+            Share Your Nha Trang
+          </div>
+
+
+          <div class="share-icon">
+            ↗
+          </div>
+
+
+          <h1 class="title">
+            Your story is ready to share.
+          </h1>
+
+
+          <p class="subtitle">
+
+            Turn one personalised
+            experience into new
+            brand discovery.
+
+          </p>
+
+
+          <div class="social-row">
+
+
+            <div class="social">
+              TikTok
+            </div>
+
+
+            <div class="social">
+              Instagram
+            </div>
+
+
+            <div class="social">
+              Facebook
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+      `;
+
+    }
+
+
+
+    /* =========================================================
+       RESTART
+    ========================================================= */
+
+    function restartExperience() {
+
+
+      answers.mood = "";
+
+      answers.companion = "";
+
+      answers.length = "";
+
+      answers.priorities = [];
+
+
+      showMood();
+
+    }
+
+
+
+    /* =========================================================
+       START EXPERIENCE
+    ========================================================= */
+
+    showMood();
+
+
+  </script>
+
+
+</body>
+
+</html>
